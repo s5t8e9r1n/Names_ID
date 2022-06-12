@@ -1,4 +1,4 @@
-package com.company;
+//package com.company;
 import java.util.*;
 
 public class Main {
@@ -36,14 +36,15 @@ public class Main {
             ArrayNames[0][5] = "Test1";
             ArrayNames[1][5] = "Test2";
             ArrayNames[2][5] = "Test3";
-
-            System.out.print("Input ID of landowner: ");
+            
+            System.out.println("There are " + ArrayNames.length + " landowners in the database");
+            System.out.print("Input ID of landowner starting at 0: ");
             Scanner sc= new Scanner(System.in);
             String str = sc.nextLine();
 
             for (int i = 0; i < ArrayNames.length; i++) {
                 if (str.equals(ArrayNames[i][0])) {
-                    System.out.println("landowners: " + ArrayNames[i][1] + " Age: " + ArrayNames[i][2] + " Adress: " + ArrayNames[i][3] + " Land arrea: " + ArrayNames[i][4] + " Other: " + ArrayNames[i][5]);
+                    System.out.println("Landowner: " + ArrayNames[i][1] + "\n" + "Age: " + ArrayNames[i][2] + "\n" + "Adress: " + ArrayNames[i][3] + "\n" + "Land arrea: " + ArrayNames[i][4] + "\n" + "Other: " + ArrayNames[i][5]);
                 }
             }
         }
